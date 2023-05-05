@@ -1,0 +1,81 @@
+<!--
+Hello World
+
+Example of a hello world for using Tailwind
+-->
+
+<h1 class="text-2xl font-bold underline uppercase">Hello World</h1>
+<div class="m-10">&nbsp;</div>
+
+<!--
+Reducing Duplication
+
+To address duplication, there are a few approaches that could be taken. This is an example where the style has been
+defined in styles.css using @layer and @apply to create a layer of abstration over other utilities.
+-->
+
+<h1 class="aWayToReduceDuplication">Here's a Common Class!</h1>
+<div class="m-10">&nbsp;</div>
+
+<!--
+Modifiers
+
+Modifiers are Tailwind's way of using CSS pseudo classes, pseudo-elements and media queries in HTML markup. These
+modifiers can be added to other Tailwind utilities.
+-->
+
+<h1 class="text-2xl font-bold hover:underline">Hover Over Me</h1>
+<div class="m-10">&nbsp;</div>
+
+<!--
+Size and Shape
+
+Tailwind provides families of utilities to support a variety of sizes and shapes for text using the pattern text-[size].
+-->
+
+<h1 class="text-2xl font-bold">Text Shapes and Sizes</h1>
+<div class="text-xs">Class text-xs, font size 0.75rem, line height 1rem</div>
+<div class="text-sm">Class text-sm, font size 0.875rem, line height 1.25rem</div>
+<div class="text-base">Class text-base, font size 1rem, line height 1.5rem</div>
+<div class="text-lg">Class text-lg, font size 1.125rem, line height 1.75rem</div>
+<div class="text-xl">Class text-xl, font size 1.25rem, line height 1.75rem</div>
+<div class="text-2xl">Class text-2xl, font size 1.5rem, line height 2rem</div>
+<div class="text-3xl">Class text-3xl, font size 1.875rem, line height 2.25rem</div>
+<div class="text-4xl">Class text-4xl, font size 2.25rem, line height 2.5rem</div>
+<div class="text-5xl">Class text-5xl, font size 3rem, line height 1</div>
+<div class="text-6xl">Class text-6xl, font size 3.75rem, line height 1</div>
+<div class="text-7xl">Class text-7xl, font size 4.5rem, line height 1</div>
+<div class="text-8xl">Class text-8xl, font size 6rem, line height 1</div>
+<div class="text-9xl">Class text-9xl, font size 8rem, line height 1</div>
+<!-- Note this just uses an arbitrary size for the utility -->
+<div class="text-[20px]">Class text-[20px]</div>
+<div class="text-base font-thin">Thin font, font weight 100</div>
+<div class="text-base font-extralight">Extra light font, font weight 200</div>
+<div class="text-base font-light">Light font, font weight 300</div>
+<div class="text-base font-normal">Normal font, font weight 400</div>
+<div class="text-base font-medium">Normal font, font weight 500</div>
+<div class="text-base font-semibold">Semibold font, font weight 600</div>
+<div class="text-base font-bold">Bold font, font weight 700</div>
+<div class="text-base font-extrabold">Extrabold font, font weight 800</div>
+<div class="text-base font-black">Black font, font weight 900</div>
+<div class="text-base uppercase">Uppercase</div>
+<div class="text-base lowercase">Lowercase</div>
+<div class="text-base capitalize">capitalize</div>
+<div class="text-base normal-case">normal case</div>
+<div class="m-10">&nbsp;</div>
+
+<!--
+Color and Opacity
+
+Tailwind offers hundred of color utilities. They are of the pattern text-[color]-[opacity].
+
+Along with colors, there are also:
+- text-transparent which allows you to see the background color through it
+- text-inherit which inherits the parent color
+- text-current which uses the currentColor from CSS
+
+-->
+<div class="text-base text-blue-700">Blue text, 700</div>
+<!-- Note this just uses an arbitrary hex for the utility -->
+<div class="text-base text-[#c0c0c0]">Color #c0c0c0</div>
+<div class="m-10">&nbsp;</div>

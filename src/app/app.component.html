@@ -79,3 +79,40 @@ Along with colors, there are also:
 <!-- Note this just uses an arbitrary hex for the utility -->
 <div class="text-base text-[#c0c0c0]">Color #c0c0c0</div>
 <div class="m-10">&nbsp;</div>
+
+<!--
+Alignment and Spacing
+
+Four of the main utilities for alignment and spacing are: text-[], align-[], leading-[] and tracking-[].
+
+text-[] will handle the horizontal alignment of text, which sets the text-align property.
+align-[] will handle the vertical alignment of text, which sets the vertical-align property.
+leading-[] will handle the line spacing relative to the size of the font
+tracking-[] will handle the line spacing in absolute, which sets the letter-spacing property.
+-->
+
+<div class="text-center">Centered text</div>
+<div class="text-right">Right text</div>
+<div class="text-justify">Justified text</div>
+<div class="m-10">&nbsp;</div>
+
+<!--
+Content Box
+
+p[direction]-[size] will define the padding classes for the box around the content, directions are [t]op, [b]ottom, [l]eft, [r]ight, [x] horizontal, [y] vertical
+m[direction]-[size] will define the margin, similar to the padding. Note, margins can be negative and include an additional -auto option for horizontal or vertical
+border-[side]-[size] will define the border. Side is optional.
+border-[color]-[opacity] will define the border color
+rounded-[size] will define a rounded border instead of a square one
+ring-[width] will define a ring instead of a rounded border
+ring-[offset]-[size] will define an offset ring that can be colored differently
+-->
+
+<div class="ml-10 pl-10 border-l-8 border-l-blue-700">Text with margin, padding and border on the left</div>
+<div class="ml-10 pl-10 border-2 border-black rounded-full">Text with margin, padding and rounded border</div>
+<div class="ml-10 pl-10 rounded-full ring-4 ring-offset-4 ring-offset-black">Text with rounded border and ring offset 4 black</div>
+<div class="m-10">&nbsp;</div>
+
+
+
+

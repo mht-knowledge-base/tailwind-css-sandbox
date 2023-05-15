@@ -113,6 +113,76 @@ ring-[offset]-[size] will define an offset ring that can be colored differently
 <div class="ml-10 pl-10 rounded-full ring-4 ring-offset-4 ring-offset-black">Text with rounded border and ring offset 4 black</div>
 <div class="m-10">&nbsp;</div>
 
+<!--
+Page Layout
 
+Containers
 
+Unlike other frameworks, the Tailwind container utility's primary focus is to specify the max-width of the element based on the width of the browser
+viewport. This approach allows you to only worry about those specific widths in your design rather than having to take into account any possible
+width the viewport might have.
 
+To get the common behavior of other framework containers, you need to pair the container with other utilities. For example, centering behavior may
+mean "container mx-auto" or to get elements away from the borders, you may have "container py-12 px-6".
+-->
+
+<div class="m-10">&nbsp;</div>
+
+<!--
+Grids
+
+Grids work great for some layout choices, specifically where you need to break the page into a series of columns.
+-->
+
+<h2 class="text-2xl">Grid that flows across rows by default with 2 cols</h2>
+<div class="grid grid-cols-2 w-1/4 gap-4">
+  <div class="border bg-gray-300 text-center">Col A</div>
+  <div class="border bg-gray-300 text-center">Col B</div>
+  <div class="border bg-gray-300 text-center">Col C</div>
+  <div class="border bg-gray-300 text-center">Col D</div>
+</div>
+<h2 class="text-2xl mt-5">Grid that flows across columns with 2 cols</h2>
+<div class="grid grid-cols-2 w-1/4 gap-4 grid-flow-col">
+  <div class="border bg-gray-300 text-center">Col A</div>
+  <div class="border bg-gray-300 text-center">Col B</div>
+  <div class="border bg-gray-300 text-center">Col C</div>
+  <div class="border bg-gray-300 text-center">Col D</div>
+</div>
+<h2 class="text-2xl mt-5">Grid that includes a span</h2>
+<div class="grid grid-cols-2 w-1/4 gap-4">
+  <div class="border bg-gray-300 text-center col-span-2">Col A</div>
+  <div class="border bg-gray-300 text-center">Col B</div>
+  <div class="border bg-gray-300 text-center">Col C</div>
+  <div class="border bg-gray-300 text-center">Col D</div>
+</div>
+<div class="m-10">&nbsp;</div>
+
+<!--
+Flexbox
+
+Considerations for using Flexbox:
+
+- Has better controls for dynamically managing the size of elements
+- Auto-wraps contents ont he screen when the content gets too wide
+- Can be nested
+- Works better for different screen sizes
+
+Additional considerations:
+
+- Direction can be controlled with flex-row (vertical) or flex-column (horizontal), or add -reverse to reverse ordering
+- By default, the flexbox will not wrap (flex-no-wrap), but providing flex-wrap will move boxes to the next row or column automatically
+- For accessible layouts, order-[x] can be used to order the boxes
+- Boxes can also be aligned to give more control where they are positioned in the flexbox
+- For responsive design, need to look into having elements use default block spacing on smaller devices and flex spacing on larger
+-->
+
+<div class="flex flex-col w-1/3">
+  <div class="flex-grow">Header</div>
+  <div class="flex flew-row">
+    <div class="text-center w-1/5">Left sidebar</div>
+    <div class="text-center w-3/5">Content</div>
+    <div class="text-center w-1/5">Right sidebar</div>
+  </div>
+  <div class="flex-grow">Footer</div>
+</div>
+<div class="m-10">&nbsp;</div>
